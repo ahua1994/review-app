@@ -1,0 +1,64 @@
+.Card {
+    width: 700px;
+    height: 500px;
+    background-color: #444;
+    margin: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .btns {
+        width: 15%;
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 20px;
+        .left,.right{
+            cursor: pointer;
+            font-size: 1.6rem;
+            color: aqua;
+        }
+    }
+
+    .random {
+        background-color: #222;
+        color: aqua; 
+        font-size: 1rem; 
+        cursor: pointer;
+        &:hover{
+            background-color: white;
+        }
+    }
+
+    .pfp {
+        .quote{
+            height: 40px;
+            width: 40px; 
+            position: absolute;
+            color: aqua;
+            transform: scaleX(-1);
+        }
+        .profile{ 
+            height: 160px;
+            width: 160px;
+            object-fit: cover;
+            border-radius: 50%; 
+            box-shadow: 5px -5px aqua;
+        }  
+    }
+
+    h2 {
+        margin: 0;
+        text-transform: capitalize;
+        font-weight: 100;
+    }
+    h3 {
+        margin: 0;
+        text-transform: uppercase;
+        color: aqua;
+        font-weight: 400;
+    }
+    p {
+        width: 80%;
+        text-align: center;
+    }
+}
